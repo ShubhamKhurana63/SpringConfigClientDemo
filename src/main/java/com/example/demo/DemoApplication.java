@@ -65,6 +65,8 @@ public class DemoApplication {
 
 		// return
 		// environment.getProperty("message")+environment.getProperty("name");
+		
+		System.out.println("||||||||||||||||"+message);
 		String url = environment.getProperty("node");
 		String response = restTemplate.getForObject(url, String.class);
 		return response;
